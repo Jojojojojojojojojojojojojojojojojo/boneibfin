@@ -20,21 +20,11 @@ function setup() {
 
 
   base1 = new PlayerBase(300, random(450, height - 300), 180, 150);
-  player = new Player(285, playerBase.body.position.y - 153, 50, 180);
+  player = new Player(285, base1.body.position.y - 153, 50, 180);
 
 
-  base2 = new ComBase(
-    width - 300,
-    random(450, height - 300),
-    180,
-    150
-  );
-  com = new ComPlayer(
-    width - 280,
-    computerBase.body.position.y - 153,
-    50,
-    180
-  );
+  base2 = new ComBase(width - 300,random(450, height - 300),180,150);
+  com = new ComPlayer(width - 280,base2.body.position.y - 153,50,180);
 
  }
 
